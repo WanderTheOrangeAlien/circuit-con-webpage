@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: #071952;
+    width: 100vw;
+    border-style: solid;
+}
+
+a{
+    text-decoration: none;
+    margin: 0px;
+    border: 0px;
+}
+
+.navbar-element{
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.5s;
+    border-style: solid;
+    margin-left: 0px;
+    margin-right: 0px;
+    border: 0px;
+}
+
+.navbar-element:hover{
+    background-color: white;
+    color: black;
+
+}
+
+h1{
+    text-align: center;
+}
+
+.page-title-div{
+    width: auto;
+    height: 500px;
+    background-size: cover;
+}
+
+.event-page{
+    background-image: url("images/ConferenceRoomjpg.jpg");
+}
+
+.page-title-div div{ /* For the overlay */
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000a4;
+}
+
+.page-title-div h1{
+
+    font-weight: 500;
+    font-size: 6em;
+    letter-spacing: 2px;
+    color: white;
+}
+
+/*Event Page*/
+
+.event-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    
+}
+
+.event-1{
+    background-color: #f2f2f2;
+}
+
+.event-2{
+    background-color: white;
+}
+
+.event-3{
+    background-color: #f2f2f2;
+}
+
+.event-title{
+    width: 100%;
+    padding: 20px 0px 0px 0px;
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;    
+}
+
+.event-section-title{ /* Title for the conference and the hands-on */
+    width: 100%;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    text-align: left;  
+}
+
+.event-section-info{
+    font-size: 1.1em;
+    line-height: 1.8em;
+    text-align: justify;
+}
+
+/* ----Conference---- */
+
+.conference-div{
+    display: flex;
+    margin: 0px;
+    border: 0px;
+    padding: 20px 50px 20px 50px;
+    /*background-color: rgba(129, 53, 53, 0.4);*/
+}
+
+.conference-info{
+    flex: 2;
+    margin: 0;
+    border: 0;
+    padding-right: 80px;
+}
+
+.conference-img{
+    display: flex;
+    flex: 1;
+    margin: 0;
+    border: 0;
+    min-width: 250px;    
+}
+
+.conference-img img{
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* ----Hands On---- */
+
+.handson-div{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0px;
+    border: 0px;
+    padding: 20px 50px 20px 50px;
+    /* background-color: rgba(53, 129, 90, 0.4); */
+}
+
+.handson-info{
+    flex: 2;
+    margin: 0;
+    border: 0;
+    padding-left: 80px;
+}
+
+.handson-info .event-section-title{
+    text-align: right;
+    
+}
+
+.handson-img{
+    flex: 1;
+    padding-top: 4%;
+    margin: 0;
+    border: 0;
+    min-width: 250px;    
+}
+
+.handson-img img{
+
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
