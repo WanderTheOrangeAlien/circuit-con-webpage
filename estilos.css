@@ -5,7 +5,6 @@ body{
 
 header{
     background-color: #071952;
-    width: 100vw;
     border-style: solid;
 }
 
@@ -32,7 +31,6 @@ a{
 .navbar-element:hover{
     background-color: white;
     color: black;
-
 }
 
 h1{
@@ -181,9 +179,87 @@ h1{
 }
 
 /*main section*/
-#main {
-    width: 1920px;
+main {
+    width: auto;
+    height: 750px;
+    background-size: cover;
+    background-image: url("images/main-image.jpg");
+}
+
+main h1, h2 {
+    text-align: center;
+    font-size: 60px;
+    color: #f2f2f2;
+    margin: auto;
+}
+
+main h1 {
+    padding-top: 240px;
+}
+
+
+.text-container {
+    display: grid;
+    place-items: center;
+}
+
+/*about section*/
+#about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 100px;
+    gap: 25px;
+}
+
+#about h2 {
+    color: black;
+    text-align: start;
+}
+
+#description{
+    font-size: 25px;
+}
+
+.about-container {
+    margin: 0;
+}
+
+#about img{
+    max-width: 100%;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+}   
+
+.img-container {
+    width: auto;
+    height: auto;
+}
+
+/*resumen section*/
+.resumen {
+    background-color: #071952;
+    height: 200px;
+    width: 100%;
+}
+
+.resumen-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.resumen h4 {
+    color: #f2f2f2;
+    font-size: 20px;
+}
+
+.resume-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*que veras section*/
@@ -193,15 +269,9 @@ h1{
     background-color: #373535;
 }
 
-#texto-que-veras {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #que-veras h2{
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     color: #f2f2f2;
 }
 
@@ -227,4 +297,27 @@ h1{
     color: #f2f2f2;
 }
 
+/*footer*/
+
+/*inventando con responsive*/
+@media only screen and (max-width:500px) {
+    #tarjetas-que-veras{
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .resumen-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .resumen{
+        height: 100%;
+    }
+    
+  }
 
