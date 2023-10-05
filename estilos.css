@@ -336,8 +336,7 @@ label{
     display: grid;
     grid-template-columns: minmax(100px,20%) auto;
     row-gap: 30px;
-    background-color: white;
-    padding: 40px 30px 40px 30px;
+    padding: 5px 30px 40px 30px;
     border-radius: 10px;
      
 }
@@ -376,7 +375,7 @@ label{
     padding: 7px 20px 7px 20px;
     text-align: center;
     font-size: 1.3rem;
-    background-color: #e8e8e8;
+    background-color: #f1f1f1;
     
 }
 
@@ -385,7 +384,7 @@ a .schedule-event{
 }
 
 .schedule-clickable:hover{
-    background-color: #00000009;
+    background-color: #dadada;;
 }
 
 a:link, a:visited {
