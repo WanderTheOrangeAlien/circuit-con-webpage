@@ -1,11 +1,15 @@
 html{
     font-size: 18px;
+    max-height: none;
+    min-height: 100vh;
 }
 
 body{
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-width: none;
+    height: 100%;
+    min-height: 100vh;
 }
 
 
@@ -31,11 +35,14 @@ a{
 
 main{
     height: 100%;
+    min-height: 100vh;
+    width: 100%;
 }
 
 h2, h1{
     font-family: 'Pixelify Sans', cursive;
     font-family: 'Rubik', sans-serif;
+    text-align: center;
 }
 
 .navbar-element{
@@ -53,10 +60,6 @@ h2, h1{
 .navbar-element:hover{
     background-color: white;
     color: black;
-}
-
-h1{
-    text-align: center;
 }
 
 .page-title-div{
@@ -82,9 +85,10 @@ h1{
 }
 
 .page-title-small{
+    margin-top: 40px;
     margin-bottom: 20px;
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 }
 
 
@@ -126,8 +130,8 @@ h1{
 
 .event-title{
     width: 100%;
-    padding: 20px 0px 0px 0px;
-    font-size: 1.3rem;
+    padding: 40px 0px 30px 0px;
+    font-size: 1.7rem;
 }
 
 .event-section-title{ /* Title for the conference and the hands-on */
@@ -219,7 +223,6 @@ h1{
 /*main section*/
 main {
     width: auto;
-    height: 750px;
     background-size: cover;
     background-image: url("images/main-image.jpg");
     display: flex;
@@ -229,7 +232,6 @@ main {
 
 main h1, h2 {
     text-align: center;
-    font-size: 60px;
     color: #f2f2f2;
     margin: auto;
 }
@@ -421,7 +423,6 @@ main h1, h2 {
 
 /*Exponentes section*/
 h1 {
-    width: fit-content;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 7px;
@@ -645,7 +646,7 @@ footer {
     background-color: #068FFF;
     min-width: 10px;
     min-height: 10px;
-    width: 40px;
+    width: 100%;
     height: 40px;
     display: flex;
     justify-content: center;
@@ -655,11 +656,14 @@ footer {
 
 html {
     scroll-behavior: smooth;
-}/*Register Page*/
+}
+
+/*Register Page*/
 
 .register-page{
     background-image: url("images/Group\ 1.png");
     background-size: cover;
+    background-repeat: no;
 }
 
 .register-title{
@@ -684,6 +688,8 @@ html {
 
 .form-div-center h1{
     margin-top: 0px;
+    margin-bottom: 20px;
+    color: black;
 }
 
 label{
@@ -709,8 +715,9 @@ label{
 
 .form-selection-area{
     display: grid;
-    grid-template-columns: 225px 150px 150px;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: repeat(4,4rem);
+    column-gap: 10px;
     border-top: 1px solid black;
     padding-top: 20px;
 }
@@ -719,11 +726,14 @@ label{
     justify-self: center;
     padding: 10;
     grid-column: 2 / 3;
+    font-size: 1em;
 }
 
 .form-selection-area .title-2{
     justify-self: center;
+    text-align: center;
     grid-column: 3 / 4;
+    font-size: 1em;
 }
 
 .form-selection-area input[type="checkbox"]{
@@ -764,6 +774,8 @@ label{
 .main-div-schedule{
     margin: 0;
     border: 0;
+    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -776,7 +788,7 @@ label{
 .schedule-div{
     width: 50%;
     display: grid;
-    grid-template-columns: minmax(100px,20%) auto;
+    grid-template-columns: 1fr 4fr;
     row-gap: 30px;
     padding: 5px 30px 40px 30px;
     border-radius: 10px;
@@ -797,7 +809,7 @@ label{
     color: white;
     background-color: #3152c0;
     
-    font-size: 1.2rem;
+    font-size: 1.2em;
     
 }
 
@@ -816,7 +828,7 @@ label{
 
     padding: 7px 20px 7px 20px;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2em;
     background-color: #f1f1f1;
     
 }
@@ -832,4 +844,94 @@ a .schedule-event{
 a:link, a:visited {
     color: black;
     text-decoration: none;
+}
+
+
+/*inventando con responsive*/
+@media only screen and (max-width: 500px) {
+
+    html{
+        font-size: 3.9vw;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foot-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .speaker-card {
+        width: 350px;
+        height: 550px;
+    }
+
+    .schedule-page{
+        font-size: 0.8rem;
+    }
+
+    .main-div-schedule{
+        align-items: start;
+        justify-content: start;
+        padding-left: 50px;
+    }
+
+    .schedule-div{
+        padding: 10px;
+    }
+
+    .page-title-small{
+        padding-left: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    #tarjetas-que-veras{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+    .resumen-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .resumen{
+        height: 100%;
+    }
+    #speakers-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+  @media only screen and (max-width:1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #speakers-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
