@@ -98,6 +98,12 @@ h2, h1{
     background-image: url("images/ConferenceRoom.jpg");
 }
 
+main.event-page{
+    display: flex;
+    flex-direction: column !important;
+    align-items: start;
+}
+
 .event-div{
     display: flex;
     flex-direction: column;
@@ -663,6 +669,17 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    margin-top: 10px;
+}
+
+#arriba-link a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#arriba-link a{
+    width: 100%;
 }
 
 html {
@@ -683,7 +700,6 @@ html {
 }
 
 .form-div{
-    padding: 20px;
     display: flex;
     justify-content: center;
 }
@@ -695,6 +711,7 @@ html {
     border-radius: 20px;
     background-color: white;
     box-shadow: 10px 10px 0px 0px #000000a4;
+    max-width: 80%;
 }
 
 .form-div-center h1{
@@ -898,6 +915,10 @@ a:link, a:visited {
 
     .page-title-small{
         padding-left: 10px;
+    }
+
+    .form-div-center{
+        width: 70%;
     }
 
 }
