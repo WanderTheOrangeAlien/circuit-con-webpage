@@ -16,7 +16,6 @@ header{
     border-style: none;
     display: flex;
     justify-content: center;
-    min-width: 400px;    
 }
 
 nav{
@@ -223,6 +222,9 @@ main {
     height: 750px;
     background-size: cover;
     background-image: url("images/main-image.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main h1, h2 {
@@ -230,10 +232,6 @@ main h1, h2 {
     font-size: 60px;
     color: #f2f2f2;
     margin: auto;
-}
-
-main h1{
-    margin-top: 250px;
 }
 
 .text-container {
@@ -268,8 +266,9 @@ main h1{
 #about img{
     max-width: 100%;
     width: 100%;
+    min-width: 350px;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
 }   
 
 .img-container {
@@ -329,6 +328,10 @@ main h1{
     width: 33%;
 }
 
+.que-veras-img-container {
+    position: relative;
+}
+
 #que-veras img {
     height: 350px;
     width: 300px;
@@ -357,6 +360,7 @@ main h1{
 .img img{
     width: 100%;
     max-width: 100%;
+    min-width: 300px;
     height: auto;
     object-fit: cover;
 }
@@ -366,7 +370,7 @@ main h1{
 }
 
 .description p {
-    font-size: 200%;
+    font-size: 25px;
     display: table-cell;
     vertical-align: middle;
 }
@@ -375,12 +379,13 @@ main h1{
 #register {
     background-image: url(images/register-background-2.jpg);
     width: auto;
-    height: 300px;
+    height: 30%;
     background-size: contain;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: fit-content;
 }
 
 #register-text {
@@ -396,14 +401,22 @@ main h1{
     width: 250px;
     background-color: #068FFF;
     text-align: center;
-    border-radius: 8px;
-    margin: auto;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
 }
 
 #register-link-container p{
     color: #f2f2f2;
     font-size: 25px;
     margin: 0;
+    text-align: center;
+    vertical-align: middle;
 }
 
 /*Exponentes section*/
@@ -495,6 +508,10 @@ h1 {
     text-align: center;
 }
 
+.on-hover-div p a{
+    color: #f2f2f2;
+}
+
 .on-hover-div > *{
     transform: translateY(35px);
     transition: 0.6s;
@@ -566,6 +583,15 @@ footer {
         width: 350px;
         height: 550px;
     }
+    #description p {
+        font-size: 100%;
+    }
+    .description{
+        width: 225px;
+    }
+    html {
+        font-size: 3.9vw;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -614,8 +640,6 @@ footer {
         grid-template-rows: repeat(3, 1fr);
     }
 }
-
-
 
 #arriba-link {
     background-color: #068FFF;
