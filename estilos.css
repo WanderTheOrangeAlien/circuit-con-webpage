@@ -246,7 +246,6 @@ main h1, h2 {
     text-align: center;
     color: #f2f2f2;
     margin: auto;
-    font-size: 60px;
 }
 
 .text-container {
@@ -272,7 +271,7 @@ main h1, h2 {
 #about h2 {
     color: black;
     text-align: start;
-    font-size: 50px;
+    font-size: 2em;
 }
 
 #description{
@@ -395,7 +394,7 @@ main h1, h2 {
 }
 
 .description p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     display: table-cell;
     vertical-align: middle;
 }
@@ -414,11 +413,19 @@ main h1, h2 {
 }
 
 #register-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.8em;
     color: #f2f2f2;
     text-align: center;
     font-family: 'Pixelify Sans', cursive;
     font-family: 'Rubik', sans-serif;
+    padding: 20px;
+}
+
+#register-text h3{
+    max-width: 90%;
 }
 
 #register-link-container {
@@ -523,6 +530,10 @@ h1 {
     transition: 0.4s;
 }
 
+.on-hover-div.home-hover{
+    background-color: #0000007a;
+}
+
 .on-hover-div:hover{
     opacity: 1;
 }
@@ -535,6 +546,10 @@ h1 {
 
 .on-hover-div p a{
     color: #f2f2f2;
+}
+
+.on-hover-div p a:hover{
+    color: #5f77ff;
 }
 
 .on-hover-div > *{
@@ -578,10 +593,16 @@ footer {
     color: #ccc;
 }
 
+#copyright{
+    display: flex;
+    justify-content: center;
+}
+
 #copyright h4{
     font-size: 24px;
     text-align: center;
     color: #f2f2f2;
+    max-width: 85%;
 }
 
 #socialmedia-line{
@@ -616,6 +637,14 @@ footer {
     }
     html {
         font-size: 3.9vw;
+    }
+    #description{
+        font-size: 1.5em;
+    }
+
+    .conference-info,.handson-info{
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 

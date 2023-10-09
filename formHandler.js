@@ -24,6 +24,8 @@ function logSubmit(){
     }
 
     console.log("Form Submited!\n" + output);
+
+    alert("Has sido registrado con éxito");
 }
 
 
